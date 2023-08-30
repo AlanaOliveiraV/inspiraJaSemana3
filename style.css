@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+    background-image: url(./img/fundo-livros.jpg);
+	background-size: cover;
+}
+#logo {
+    width: 90px;
+    position: absolute;
+    top: 5px;
+    margin-left: 5%;
+}
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 10px;
+}
+li {
+    float: left;
+    padding: 20 10 20 10;
+    color: black;
+    background-color: #f7f7f7;
+} 
+
+#titulo {
+    color: white;
+    padding-top: 20%;
+    font-size: 70px;
+    line-height: 0.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section {
+    padding: 20px;
+    float: left;
+}
+.destaque {
+    background-color: #fcf3d8;
+} 
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.dois {
+    width: 40%;
+}
+.tres {
+    width: 29%;
+    padding: 0 2%;
+}
+.quatro {
+    width: 15%;
+}
+
+.justificado {
+    text-align: justify;
+}
+.centralizado {
+    text-align: center;
+}
+
+footer {
+    background-color: #fcf3d8;
+    float: left;
+    width: 100%;
+    height: 15%;
+    color: black;
+} 
+
+@media all and (max-width: 768px) {
+    #logo{
+        visibility: hidden;
+    }
+    .centralizado, .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
+      display: block;
+      width: 80%;
+      padding: 0;
+      margin: 10px auto;
+      float: none;
+    }
+    header {
+      position: relative;
+      width: 100%;
+      margin-left: 0px;
+      text-align: center;
+      background: fixed;
+    }
+}
